@@ -1,0 +1,176 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and navigation */
+}
+
+.open-btn, .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.side-panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1; /* Ensure side panel is above other content */
+}
+
+.side-panel a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-panel a:hover {
+    background-color: #575757;
+}
+
+.main-content {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(87, 212, 118);
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: 0.5s;
+    width: 200px;
+    font-family: "New Amsterdam", sans-serif;
+    
+}
+
+button:hover {
+    opacity: 0.75; /* Better visual feedback */
+}
+
+img:not(.img1) {
+    width: 60px;
+    border-radius: 200px;
+    transition: 0.5s;
+}
+
+h1 {
+    display: block;
+}
+
+.fst2 {
+    padding: 0;
+    font-size: 28px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin: 0 0px; /* Responsive spacing */
+    margin-right: 50px;
+}
+
+.fst {
+    width: 100%;
+    height: auto;
+    text-align: center; /* Center align buttons in header */
+}
+
+.butns {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center buttons horizontally */
+}
+
+.img1 {
+    margin-top: 80px;
+    max-width: 100%; /* Ensure image scales down */
+    height: auto;
+}
+
+/* Media Queries */
+
+/* For tablets and mobile devices */
+@media (max-width: 768px) {
+    .side-panel a {
+        font-size: 20px; /* Smaller font size on small screens */
+    }
+
+    .open-btn, .close-btn {
+        font-size: 24px; /* Adjust icon size */
+    }
+
+    header {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start;
+    }
+
+    .fst2 {
+        font-size: 24px; /* Smaller button font size */
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+
+    .butns button {
+        width: 100%; /* Full width buttons on small screens */
+    }
+
+    .img1 {
+        margin-top: 20px; /* Reduce top margin for smaller screens */
+    }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+    .side-panel a {
+        font-size: 18px; /* Even smaller font size for very small screens */
+    }
+
+    .open-btn, .close-btn {
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    .fst2 {
+        font-size: 20px; /* Further reduce button font size */
+    }
+
+    .butns button {
+        font-size: 14px; /* Smaller button text */
+    }
+}
+input{
+    width: 200px;
+    height: 36px;
+    border-radius: 26px;
+    margin-bottom: 8px;
+    padding-left: 4px;
+    border: none;
+}
+form{
+    padding-top: 15%;
+}

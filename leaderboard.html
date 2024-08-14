@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100wh;
+            height: 100vh;
+        }
+
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="sidePanel" class="side-panel">
+        <a href="javascript:void(0)" class="close-btn" onclick="closePanel()">&times;</a>
+        <a href="#">Account</a>
+        <a href="#">Settings</a>
+    </div>
+    <div id="mainContent" class="main-content">
+        <header class="heello">
+        <button class="open-btn" onclick="openPanel()"><img src="Logo.jpg" alt=""></button>
+        <div class="fst">
+            <center>
+            <a href="tracking.html"><button class="fst2">Tracking</button></a>
+            <a href="leaderboard.html"><button class="fst2">leaderboard</button></a>
+            <a href="home.html"><button class="fst2">home</button></a>
+        </center>
+        </div>
+        
+        </header>
+        <main>
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard">
+                <li>User 1: 100 points</li>
+                <li>User 2: 90 points</li>
+                <li>User 3: 80 points</li>
+            </ul>
+    </main>
+</div>
+    <script src="scripts.js"></script>
+</body>
+</html>
